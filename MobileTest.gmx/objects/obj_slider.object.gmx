@@ -92,6 +92,8 @@ if(!win) {
         image_alpha = 0;
         obj_countdown.go = false;
         alarm[0] = room_speed * 2;
+        
+        global.wins[global.player_at_bat]++;
     }
     
     if(y &lt; ystart) { y = ystart; }

@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hspeed = 14;
+            <string>image_speed = .3;
+
+hspeed = 14;
 
 friction = .2;
 
@@ -88,7 +90,7 @@ if(hspeed &lt;= 0 &amp;&amp; !hit) {
                                                              
                     
 
-if(y &gt; room_height) {  room_goto_next(); }
+if(y &gt; room_height + 12) {  room_goto_next(); }
 </string>
           </argument>
         </arguments>

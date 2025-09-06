@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>image_alpha = 0;
+color = c_black
 </string>
           </argument>
         </arguments>
@@ -49,8 +50,7 @@
           <argument>
             <kind>1</kind>
             <string>image_alpha += .07;
-
-draw_set_color(c_black);
+                         
 
 if(image_alpha &gt;= 1) { room_goto(target_room); }
 </string>
@@ -75,7 +75,10 @@ if(image_alpha &gt;= 1) { room_goto(target_room); }
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_alpha(image_alpha);
+            <string>
+draw_set_color(color);
+
+draw_set_alpha(image_alpha);
 draw_rectangle(0,0,room_width,room_height,0);
 draw_set_alpha(1);
 </string>

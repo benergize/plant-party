@@ -11,22 +11,34 @@
     <sprite>sprites\spr_press_start</sprite>
     <sprite>sprites\spr_get_ready</sprite>
     <sprite>sprites\spr_potted_plant</sprite>
-    <sprite>sprites\spr_bowing</sprite>
-    <sprite>sprites\spr_gift</sprite>
-    <sprite>sprites\spr_plant_girlfirned</sprite>
-    <sprite>sprites\spr_slider</sprite>
-    <sprite>sprites\spr_heart</sprite>
-    <sprite>sprites\spr_heart_dissolve</sprite>
     <sprites name="game_select">
       <sprite>sprites\spr_plants_with</sprite>
       <sprite>sprites\spr_gratitude</sprite>
       <sprite>sprites\spr_game_select</sprite>
     </sprites>
+    <sprites name="gratitude">
+      <sprite>sprites\spr_plant_girlfirned</sprite>
+      <sprite>sprites\spr_heart</sprite>
+      <sprite>sprites\spr_slider</sprite>
+      <sprite>sprites\spr_heart_dissolve</sprite>
+      <sprite>sprites\spr_gift</sprite>
+      <sprite>sprites\spr_bowing</sprite>
+    </sprites>
+    <sprites name="altitude">
+      <sprite>sprites\spr_clouds</sprite>
+      <sprite>sprites\spr_plane</sprite>
+      <sprite>sprites\spr_plane_bank</sprite>
+      <sprite>sprites\spr_plant_flying</sprite>
+    </sprites>
+    <sprite>sprites\sprite18</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bac_ocean</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_register_globals.gml</script>
+    <script>scripts\scr_back_to_game_select.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shader0.shader</shader>
@@ -53,16 +65,26 @@
       <object>objects\obj_countdown</object>
       <object>objects\obj_game_select</object>
       <object>objects\obj_game_select_title</object>
+      <objects name="altitude">
+        <object>objects\obj_altitude_player</object>
+        <object>objects\obj_sky_controller</object>
+        <object>objects\obj_cloud</object>
+        <object>objects\obj_enemy_plane</object>
+        <object>objects\obj_enemy_plane_veer</object>
+        <object>objects\obj_plane_bullet</object>
+      </objects>
     </objects>
     <object>objects\obj_fadeout</object>
     <object>objects\obj_fadein</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room6</room>
     <room>rooms\init</room>
     <room>rooms\roo_player_select</room>
     <room>rooms\roo_player_up</room>
     <room>rooms\roo_game_select</room>
     <room>rooms\roo_gratitude</room>
+    <room>rooms\roo_util_back_to_game_select</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

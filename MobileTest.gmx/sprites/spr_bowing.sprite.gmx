@@ -9,7 +9,7 @@
   <bboxmode>0</bboxmode>
   <bbox_left>49</bbox_left>
   <bbox_right>158</bbox_right>
-  <bbox_top>10</bbox_top>
+  <bbox_top>7</bbox_top>
   <bbox_bottom>239</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
@@ -36,5 +36,10 @@
     <frame index="13">images\spr_bowing_13.png</frame>
     <frame index="14">images\spr_bowing_14.png</frame>
     <frame index="15">images\spr_bowing_15.png</frame>
+    <frame index="16">images\spr_bowing_16.png</frame>
+    <frame index="17">images\spr_bowing_17.png</frame>
+    <frame index="18">images\spr_bowing_18.png</frame>
+    <frame index="19">images\spr_bowing_19.png</frame>
+    <frame index="20">images\spr_bowing_20.png</frame>
   </frames>
 </sprite>
