@@ -16,6 +16,12 @@
     <sprite>sprites\spr_plant_girlfirned</sprite>
     <sprite>sprites\spr_slider</sprite>
     <sprite>sprites\spr_heart</sprite>
+    <sprite>sprites\spr_heart_dissolve</sprite>
+    <sprites name="game_select">
+      <sprite>sprites\spr_plants_with</sprite>
+      <sprite>sprites\spr_gratitude</sprite>
+      <sprite>sprites\spr_game_select</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -42,14 +48,18 @@
         <object>objects\obj_sake</object>
         <object>objects\obj_slider</object>
         <object>objects\obj_heart</object>
+        <object>objects\obj_heart_dissolve</object>
       </objects>
       <object>objects\obj_countdown</object>
+      <object>objects\obj_game_select</object>
+      <object>objects\obj_game_select_title</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\init</room>
     <room>rooms\roo_player_select</room>
     <room>rooms\roo_player_up</room>
+    <room>rooms\roo_game_select</room>
     <room>rooms\roo_gratitude</room>
   </rooms>
   <help>

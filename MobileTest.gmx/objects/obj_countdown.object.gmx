@@ -80,7 +80,7 @@ countdown_time--;
           <argument>
             <kind>1</kind>
             <string>draw_set_halign(fa_center);
-draw_text(x,y,"Plants with grattitude: Make him bow!#" + string(countdown_time));
+draw_text(x,y,string(countdown_time));
 </string>
           </argument>
         </arguments>
