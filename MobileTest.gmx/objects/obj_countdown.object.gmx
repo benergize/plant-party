@@ -35,6 +35,8 @@ alarm[0] = room_speed;
 
 x = room_width/2;
 image_speed = .2;
+
+invert = false;
 </string>
           </argument>
         </arguments>
@@ -140,10 +142,17 @@ else {
     draw_set_halign(fa_center);
     
     draw_set_font(font1);
-    draw_set_color(c_black);
+    
+    if(!invert){ draw_set_color(c_black); }
+    else { draw_set_color(c_white); }
+    
     draw_text(x,y-3,string(countdown_time));
     
-    draw_set_color(c_white);
+    
+    if(invert){ draw_set_color(c_black); }
+    else { draw_set_color(c_white); }
+    
+    
     draw_text(x,y,string(countdown_time));
 
     draw_set_font(font0);

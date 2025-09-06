@@ -8,13 +8,13 @@
   <sprites name="sprites">
     <sprite>sprites\spr_how_many_players</sprite>
     <sprite>sprites\spr_title</sprite>
-    <sprite>sprites\spr_press_start</sprite>
     <sprite>sprites\spr_get_ready</sprite>
-    <sprite>sprites\spr_potted_plant</sprite>
+    <sprite>sprites\spr_press_start</sprite>
     <sprites name="game_select">
       <sprite>sprites\spr_plants_with</sprite>
       <sprite>sprites\spr_gratitude</sprite>
       <sprite>sprites\spr_altitude</sprite>
+      <sprite>sprites\spr_aptitude</sprite>
       <sprite>sprites\spr_game_select</sprite>
     </sprites>
     <sprites name="gratitude">
@@ -25,6 +25,7 @@
       <sprite>sprites\spr_gift</sprite>
       <sprite>sprites\spr_bowing</sprite>
     </sprites>
+    <sprite>sprites\spr_potted_plant</sprite>
     <sprites name="altitude">
       <sprite>sprites\spr_clouds</sprite>
       <sprite>sprites\spr_plane</sprite>
@@ -92,13 +93,13 @@
     <object>objects\obj_fadein</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\roo_aptitude</room>
     <room>rooms\init</room>
     <room>rooms\roo_player_select</room>
     <room>rooms\roo_player_up</room>
     <room>rooms\roo_game_select</room>
     <room>rooms\roo_gratitude</room>
     <room>rooms\roo_altitude</room>
+    <room>rooms\roo_aptitude</room>
     <room>rooms\roo_util_back_to_game_select</room>
   </rooms>
   <help>

@@ -40,6 +40,11 @@ games[1,1] = spr_altitude;
 games[1,2] = roo_altitude;
 games[1,3] = "DON'T GET SHOT DOWN!";
 
+games[2,0] = "Aptitude";
+games[2,1] = spr_aptitude;
+games[2,2] = roo_aptitude;
+games[2,3] = "PASS THE TEST!";
+
 game = irandom(array_height_2d(games) - 1);
 
 done = false;

@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>questions = array_create(999);
+            <string>answered = false;
+
+questions = array_create(999);
 
 questions[0,0] = "What is the national plant of Tunisia?";
 questions[0,1] = "Jasmine";
