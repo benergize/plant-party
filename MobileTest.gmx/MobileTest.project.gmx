@@ -37,7 +37,9 @@
     <sprite>sprites\spr_failure</sprite>
     <sprite>sprites\spr_success</sprite>
     <sprite>sprites\spr_test</sprite>
+    <sprite>sprites\spr_tomato</sprite>
     <sprite>sprites\spr_radio_button</sprite>
+    <sprite>sprites\spr_skewer</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bac_ocean</background>
@@ -83,11 +85,14 @@
         <object>objects\obj_plane_bullet</object>
         <object>objects\obj_explosion</object>
       </objects>
-      <object>objects\obj_countdown</object>
       <objects name="aptitude">
         <object>objects\obj_aptitude</object>
         <object>objects\obj_button</object>
       </objects>
+      <objects name="finger_food">
+        <object>objects\obj_skewer</object>
+      </objects>
+      <object>objects\obj_countdown</object>
     </objects>
     <object>objects\obj_fadeout</object>
     <object>objects\obj_fadein</object>
