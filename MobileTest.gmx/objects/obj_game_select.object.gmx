@@ -26,6 +26,42 @@
           <argument>
             <kind>1</kind>
             <string>alarm[0] = room_speed * .7;       
+
+
+games = array_create(40);
+games[0,0] = "Gratitude";
+games[0,1] = spr_gratitude;
+games[0,2] = roo_gratitude;
+games[0,3] = "MAKE HIM BOW!"
+
+game = irandom(array_height_2d(games) - 1);
+
+done = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>fa = instance_create(0,0,obj_fadeout);
+fa.target_room = games[game,2];
+
 </string>
           </argument>
         </arguments>
@@ -74,7 +110,14 @@ image_speed = .3;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(y &lt;= room_height/2) { gravity = 0; vspeed = 0; }
+            <string>if(y &lt;= room_height/2) { 
+    gravity = 0; 
+    vspeed = 0; 
+    if(!done) {
+        alarm[1] = room_speed * 2; 
+        done = true;
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -99,7 +142,11 @@ image_speed = .3;
             <kind>1</kind>
             <string>draw_self();
 
-draw_sprite(spr_gratitude,image_index,x,y);
+draw_sprite(games[game,1],image_index,x,y);
+
+draw_set_color(c_white);
+draw_set_halign(fa_center);
+draw_text(room_width/2,y+sprite_height+8, games[game, 3]);
 </string>
           </argument>
         </arguments>

@@ -54,6 +54,8 @@
       <object>objects\obj_game_select</object>
       <object>objects\obj_game_select_title</object>
     </objects>
+    <object>objects\obj_fadeout</object>
+    <object>objects\obj_fadein</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\init</room>

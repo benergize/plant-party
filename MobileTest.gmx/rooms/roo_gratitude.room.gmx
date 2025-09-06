@@ -56,6 +56,7 @@
     <instance objName="obj_sake" x="198" y="85" name="inst_A2CC974C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_countdown" x="288" y="32" name="inst_635310D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slider" x="32" y="64" name="inst_A9A03C1B" locked="0" code="" scaleX="1.91999995708466" scaleY="1.91999995708466" colour="4294967295" rotation="0"/>
+    <instance objName="obj_fadein" x="0" y="-64" name="inst_D5DF5055" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -79,7 +79,8 @@ countdown_time--;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_halign(fa_center);
+            <string>draw_set_color(c_white);
+draw_set_halign(fa_center);
 draw_text(x,y,string(countdown_time));
 </string>
           </argument>
