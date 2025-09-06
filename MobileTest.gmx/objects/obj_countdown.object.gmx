@@ -59,8 +59,15 @@ image_speed = .2;
             <kind>1</kind>
             <string>///Spawn fadeout
 var fa = instance_create(0,0,obj_fadeout);
+
+if(counting_down_to == "success") {
+    global.wins[global.player_at_bat]++;
+}
+
 fa.color = c_black;
 fa.target_room = roo_util_back_to_game_select;
+
+
 </string>
           </argument>
         </arguments>
@@ -83,7 +90,8 @@ fa.target_room = roo_util_back_to_game_select;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(go) {
+            <string>///Countdown tick
+if(go) {
     countdown_time--;
     
     if(countdown_time == 0) {

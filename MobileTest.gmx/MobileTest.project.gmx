@@ -35,6 +35,7 @@
     <sprite>sprites\spr_explosion</sprite>
     <sprite>sprites\spr_failure</sprite>
     <sprite>sprites\spr_success</sprite>
+    <sprite>sprites\spr_test</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bac_ocean</background>
@@ -50,6 +51,7 @@
   <fonts name="fonts">
     <font>fonts\font0</font>
     <font>fonts\font1</font>
+    <font>fonts\font2</font>
   </fonts>
   <objects name="objects">
     <objects name="ui">
@@ -69,7 +71,6 @@
         <object>objects\obj_heart</object>
         <object>objects\obj_heart_dissolve</object>
       </objects>
-      <object>objects\obj_countdown</object>
       <objects name="altitude">
         <object>objects\obj_altitude_player</object>
         <object>objects\obj_sky_controller</object>
@@ -79,11 +80,16 @@
         <object>objects\obj_plane_bullet</object>
         <object>objects\obj_explosion</object>
       </objects>
+      <object>objects\obj_countdown</object>
+      <objects name="aptitude">
+        <object>objects\obj_aptitude</object>
+      </objects>
     </objects>
     <object>objects\obj_fadeout</object>
     <object>objects\obj_fadein</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room7</room>
     <room>rooms\init</room>
     <room>rooms\roo_player_select</room>
     <room>rooms\roo_player_up</room>
