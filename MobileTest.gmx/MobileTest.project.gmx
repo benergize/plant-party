@@ -14,6 +14,7 @@
       <sprite>sprites\spr_plants_with</sprite>
       <sprite>sprites\spr_gratitude</sprite>
       <sprite>sprites\spr_altitude</sprite>
+      <sprite>sprites\spr_finger_food</sprite>
       <sprite>sprites\spr_aptitude</sprite>
       <sprite>sprites\spr_game_select</sprite>
     </sprites>
@@ -25,7 +26,6 @@
       <sprite>sprites\spr_gift</sprite>
       <sprite>sprites\spr_bowing</sprite>
     </sprites>
-    <sprite>sprites\spr_potted_plant</sprite>
     <sprites name="altitude">
       <sprite>sprites\spr_clouds</sprite>
       <sprite>sprites\spr_plane</sprite>
@@ -34,15 +34,19 @@
     </sprites>
     <sprite>sprites\spr_bullet</sprite>
     <sprite>sprites\spr_explosion</sprite>
+    <sprite>sprites\spr_potted_plant</sprite>
     <sprite>sprites\spr_failure</sprite>
     <sprite>sprites\spr_success</sprite>
     <sprite>sprites\spr_test</sprite>
     <sprite>sprites\spr_tomato</sprite>
+    <sprite>sprites\spr_tomato_explode</sprite>
     <sprite>sprites\spr_radio_button</sprite>
     <sprite>sprites\spr_skewer</sprite>
+    <sprite>sprites\spr_racoon</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bac_ocean</background>
+    <background>background\background1</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -66,6 +70,7 @@
       <object>objects\obj_game_select_title</object>
       <object>objects\obj_game_select</object>
       <object>objects\obj_player_at_bat</object>
+      <object>objects\obj_winner</object>
     </objects>
     <objects name="minigames">
       <objects name="gratitude">
@@ -91,6 +96,8 @@
       </objects>
       <objects name="finger_food">
         <object>objects\obj_skewer</object>
+        <object>objects\obj_falling_tomato</object>
+        <object>objects\obj_racoon</object>
       </objects>
       <object>objects\obj_countdown</object>
     </objects>
@@ -105,7 +112,9 @@
     <room>rooms\roo_gratitude</room>
     <room>rooms\roo_altitude</room>
     <room>rooms\roo_aptitude</room>
+    <room>rooms\roo_fingerfood</room>
     <room>rooms\roo_util_back_to_game_select</room>
+    <room>rooms\roo_victory</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

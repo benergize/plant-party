@@ -5,4 +5,11 @@ if(global.player_at_bat >= global.number_of_players) {
     global.player_at_bat = 0;
 }
 
-room_goto(roo_player_up);
+if(global.games_played >= global.number_of_players * 2) {
+    room_goto(roo_victory);   
+}
+else {
+    room_goto(roo_player_up);
+}
+
+
