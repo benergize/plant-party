@@ -27,12 +27,18 @@
             <kind>1</kind>
             <string>alarm[0] = room_speed * .7;       
 
+image_speed = .45;
 
 games = array_create(40);
 games[0,0] = "Gratitude";
 games[0,1] = spr_gratitude;
 games[0,2] = roo_gratitude;
-games[0,3] = "MAKE HIM BOW!"
+games[0,3] = "MAKE HIM BOW!";
+
+games[1,0] = "Altitude";
+games[1,1] = spr_altitude;
+games[1,2] = roo_altitude;
+games[1,3] = "DON'T GET SHOT DOWN!";
 
 game = irandom(array_height_2d(games) - 1);
 
@@ -142,7 +148,7 @@ image_speed = .3;
             <kind>1</kind>
             <string>draw_self();
 
-draw_sprite(games[game,1],image_index,x,y);
+draw_sprite(games[game,1],image_index,x,y+3);
 
 draw_set_color(c_white);
 draw_set_halign(fa_center);

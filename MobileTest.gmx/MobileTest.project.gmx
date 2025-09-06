@@ -14,6 +14,7 @@
     <sprites name="game_select">
       <sprite>sprites\spr_plants_with</sprite>
       <sprite>sprites\spr_gratitude</sprite>
+      <sprite>sprites\spr_altitude</sprite>
       <sprite>sprites\spr_game_select</sprite>
     </sprites>
     <sprites name="gratitude">
@@ -32,6 +33,8 @@
     </sprites>
     <sprite>sprites\spr_bullet</sprite>
     <sprite>sprites\spr_explosion</sprite>
+    <sprite>sprites\spr_failure</sprite>
+    <sprite>sprites\spr_success</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bac_ocean</background>
@@ -46,12 +49,15 @@
   </shaders>
   <fonts name="fonts">
     <font>fonts\font0</font>
+    <font>fonts\font1</font>
   </fonts>
   <objects name="objects">
-    <objects name="menus">
+    <objects name="ui">
       <object>objects\obj_press_start</object>
       <object>objects\obj_player_select</object>
       <object>objects\obj_title_screen</object>
+      <object>objects\obj_game_select_title</object>
+      <object>objects\obj_game_select</object>
       <object>objects\obj_player_at_bat</object>
     </objects>
     <objects name="minigames">
@@ -64,8 +70,6 @@
         <object>objects\obj_heart_dissolve</object>
       </objects>
       <object>objects\obj_countdown</object>
-      <object>objects\obj_game_select</object>
-      <object>objects\obj_game_select_title</object>
       <objects name="altitude">
         <object>objects\obj_altitude_player</object>
         <object>objects\obj_sky_controller</object>
@@ -80,12 +84,12 @@
     <object>objects\obj_fadein</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room6</room>
     <room>rooms\init</room>
     <room>rooms\roo_player_select</room>
     <room>rooms\roo_player_up</room>
     <room>rooms\roo_game_select</room>
     <room>rooms\roo_gratitude</room>
+    <room>rooms\roo_altitude</room>
     <room>rooms\roo_util_back_to_game_select</room>
   </rooms>
   <help>

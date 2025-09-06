@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>image_speed = .3;
 
-hspeed = 14;
+hspeed = 16;
 
 friction = .2;
 
@@ -119,7 +119,7 @@ draw_set_halign(fa_center);
 
 
 draw_set_color(c_white);
-draw_text(x,y+12, "PASS THE MOUSE TO PLAYER " + string(global.player_at_bat));
+draw_text(x,y+12, "PASS THE MOUSE TO PLAYER " + string(global.player_at_bat+1));
 </string>
           </argument>
         </arguments>
