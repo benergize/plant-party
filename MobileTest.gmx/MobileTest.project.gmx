@@ -30,7 +30,8 @@
       <sprite>sprites\spr_plane_bank</sprite>
       <sprite>sprites\spr_plant_flying</sprite>
     </sprites>
-    <sprite>sprites\sprite18</sprite>
+    <sprite>sprites\spr_bullet</sprite>
+    <sprite>sprites\spr_explosion</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bac_ocean</background>
@@ -72,6 +73,7 @@
         <object>objects\obj_enemy_plane</object>
         <object>objects\obj_enemy_plane_veer</object>
         <object>objects\obj_plane_bullet</object>
+        <object>objects\obj_explosion</object>
       </objects>
     </objects>
     <object>objects\obj_fadeout</object>

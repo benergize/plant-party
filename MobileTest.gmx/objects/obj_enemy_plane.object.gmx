@@ -31,6 +31,7 @@ image_xscale = 1.5;
 image_yscale = 1.5;
 
 can_shoot = true;
+last = -1;
 </string>
           </argument>
         </arguments>
@@ -84,7 +85,11 @@ if(can_shoot) {
 
     var pl = 400;
     if(collision_line(x,y,x+(hspeed*pl),y+pl,obj_altitude_player,0,1)) {
-        var b = instance_create(x,y + sprite_height/2 - 4,obj_plane_bullet);
+    
+        if(last == -1) { last = 1; }
+        else { last = -1; }
+    
+        var b = instance_create(x + last*(sprite_width/2),y + sprite_height/2 - 17,obj_plane_bullet);
         b.hspeed = hspeed;
         b.image_angle = radtodeg(arctan2(vspeed,-hspeed)) - 90;
         
