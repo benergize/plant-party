@@ -36,6 +36,7 @@
     <sprite>sprites\spr_failure</sprite>
     <sprite>sprites\spr_success</sprite>
     <sprite>sprites\spr_test</sprite>
+    <sprite>sprites\spr_radio_button</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bac_ocean</background>
@@ -52,6 +53,7 @@
     <font>fonts\font0</font>
     <font>fonts\font1</font>
     <font>fonts\font2</font>
+    <font>fonts\font3</font>
   </fonts>
   <objects name="objects">
     <objects name="ui">
@@ -83,13 +85,14 @@
       <object>objects\obj_countdown</object>
       <objects name="aptitude">
         <object>objects\obj_aptitude</object>
+        <object>objects\obj_button</object>
       </objects>
     </objects>
     <object>objects\obj_fadeout</object>
     <object>objects\obj_fadein</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room7</room>
+    <room>rooms\roo_aptitude</room>
     <room>rooms\init</room>
     <room>rooms\roo_player_select</room>
     <room>rooms\roo_player_up</room>
