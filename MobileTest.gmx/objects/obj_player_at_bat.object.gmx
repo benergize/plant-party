@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = .3;
+            <string>cursor_sprite = spr_cursor;
+
+image_speed = .3;
 
 hspeed = 16;
 

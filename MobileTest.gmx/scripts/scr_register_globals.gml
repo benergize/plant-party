@@ -8,3 +8,6 @@ global.wins = array_create(999);
 for(var v = 0; v < 999; v++) {
     global.wins[v] = 0;
 }
+
+window_set_cursor(cr_none);
+cursor_sprite = spr_cursor;
