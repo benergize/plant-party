@@ -94,6 +94,7 @@ if(can_shoot) {
         b.image_angle = radtodeg(arctan2(vspeed,-hspeed)) - 90;
         
         can_shoot = false;
+        audio_play_sound(sou_gunshot,1,0);
         alarm[9] = room_speed / 4;
     }
 }

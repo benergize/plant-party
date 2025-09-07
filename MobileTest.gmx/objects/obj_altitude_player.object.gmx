@@ -30,6 +30,8 @@ alive = true;
 
 image_xscale = .75;
 image_yscale = .75;
+
+audio_play_sound(bgm_1942,1,0);
 </string>
           </argument>
         </arguments>
@@ -116,15 +118,22 @@ else {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(alive) {
+            <string>
 
-    alarm[0] = 1;
-    
-    //obj_countdown.go = false;
-    obj_countdown.counting_down_to = "failure";
-    obj_countdown.countdown_time = 1;
-    
-    alive = false;
+if(alive) {
+
+    if(obj_countdown.countdown_time &gt;= 1) {
+
+        alarm[0] = 1;
+        
+        //obj_countdown.go = false;
+        obj_countdown.counting_down_to = "failure";
+        obj_countdown.countdown_time = 1;
+        
+        alive = false;
+        
+        audio_play_sound(sou_explosion,1,0);
+    }
 }
 
 

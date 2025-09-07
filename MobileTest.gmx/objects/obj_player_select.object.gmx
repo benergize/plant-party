@@ -29,6 +29,10 @@
 
 draw_set_font(font0);
 
+image_alpha = 0;
+
+fade_in = false;
+
 </string>
           </argument>
         </arguments>
@@ -52,7 +56,12 @@ draw_set_font(font0);
           <argument>
             <kind>1</kind>
             <string>if(keyboard_check_pressed(vk_left) &amp;&amp; global.number_of_players &gt; 1) { global.number_of_players--; }
-if(keyboard_check_pressed(vk_right)) { global.number_of_players++;}
+if(keyboard_check_pressed(vk_right) &amp;&amp; global.number_of_players &lt; 9) { global.number_of_players++;}
+
+if(fade_in) {
+    image_alpha += .01;
+
+}
 </string>
           </argument>
         </arguments>
@@ -76,9 +85,13 @@ if(keyboard_check_pressed(vk_right)) { global.number_of_players++;}
           <argument>
             <kind>1</kind>
             <string>draw_self();
+draw_set_alpha(image_alpha);
 draw_set_color(c_white);
 draw_set_halign(fa_center);
-draw_text(room_width/2, y, global.number_of_players);
+//draw_text(room_width/2, y, global.number_of_players);
+
+draw_sprite(asset_get_index("spr_" + string(global.number_of_players)),image_index,x+40, y);
+draw_set_alpha(1);
                                               
 </string>
           </argument>

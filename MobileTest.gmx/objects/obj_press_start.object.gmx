@@ -55,6 +55,8 @@
         fa.target_room = roo_player_up;
     }
 }
+
+if(y &gt; 276) { y -= 1; }
 </string>
           </argument>
         </arguments>

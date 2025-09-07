@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>answered = false;
+            <string>audio_play_sound(bgm_test,1,0);
+
+answered = false;
 
 questions = array_create(999);
 

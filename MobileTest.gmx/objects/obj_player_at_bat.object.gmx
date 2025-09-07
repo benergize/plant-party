@@ -32,6 +32,9 @@ hspeed = 16;
 friction = .2;
 
 hit = false;
+
+
+audio_play_sound(bgm_transition,1,0);
 </string>
           </argument>
         </arguments>

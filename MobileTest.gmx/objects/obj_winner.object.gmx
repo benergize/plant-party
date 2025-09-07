@@ -58,7 +58,7 @@ for(var v = 0; v &lt; array_length_1d(global.wins); v++) {
           <argument>
             <kind>1</kind>
             <string>draw_set_color(c_white)
-draw_text(room_width/2,room_height/2,"PLAYER " + string(highestPlayer) + " WINS!");
+draw_text(room_width/2,room_height/2,"PLAYER " + string(highestPlayer+1) + " WINS!");
 </string>
           </argument>
         </arguments>
