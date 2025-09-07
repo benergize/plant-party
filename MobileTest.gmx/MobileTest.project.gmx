@@ -5,6 +5,7 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
+    <sound>sound\bgm_result</sound>
     <sound>sound\bgm_menu</sound>
     <sound>sound\bgm_transition</sound>
     <sound>sound\bgm_sakura</sound>
@@ -133,8 +134,8 @@
     <room>rooms\roo_player_up</room>
     <room>rooms\roo_game_select</room>
     <room>rooms\roo_gratitude</room>
-    <room>rooms\roo_altitude</room>
     <room>rooms\roo_aptitude</room>
+    <room>rooms\roo_altitude</room>
     <room>rooms\roo_fingerfood</room>
     <room>rooms\roo_util_back_to_game_select</room>
     <room>rooms\roo_victory</room>

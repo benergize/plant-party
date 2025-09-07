@@ -75,9 +75,11 @@ instance_create(random(room_width), -50, choose(obj_enemy_plane, obj_enemy_plane
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[0] = random(room_speed) +1;
+            <string>///Clouds
 
-instance_create(random(room_width), -50,obj_cloud);
+alarm[0] = random(room_speed) +1;
+
+instance_create(random(room_width), -90,obj_cloud);
 </string>
           </argument>
         </arguments>
