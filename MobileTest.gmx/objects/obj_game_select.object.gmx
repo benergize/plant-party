@@ -50,7 +50,27 @@ games[3,1] = spr_finger_food;
 games[3,2] = roo_fingerfood;
 games[3,3] = "SKEWER THE TOMATOES!";
 
-game = irandom(array_height_2d(games) - 1);
+
+var alreadyPlayed = true;
+var panic = 0;
+
+while(alreadyPlayed) { 
+
+    panic++;
+
+    alreadyPlayed = false;
+    game = irandom(array_height_2d(games) - 1);
+    
+    for(var v = 0; v &lt; array_length_2d(global.player_has_played,global.player_at_bat); v++) {
+        if(global.player_has_played[global.player_at_bat, v] == game) {
+            alreadyPlayed = true;
+        }
+    }
+    
+    if(panic &gt; 50) { break; }
+}
+
+global.player_has_played[global.player_at_bat, global.games_played] = game;
 
 done = false;
 </string>
