@@ -118,7 +118,7 @@ else {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>if(is_out_of_time()) { exit; }
 
 if(alive) {
 

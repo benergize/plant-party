@@ -49,7 +49,9 @@ image_speed = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!obj_aptitude.answered) { 
+            <string>if(is_out_of_time()) { exit; }
+
+if(!obj_aptitude.answered) { 
     if(mouse_y &gt; y - sprite_height/2 &amp;&amp; mouse_y &lt; y + sprite_height/2) {
     
         image_index = 1;

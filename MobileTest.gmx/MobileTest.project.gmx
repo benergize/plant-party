@@ -81,6 +81,7 @@
   <scripts name="scripts">
     <script>scripts\scr_register_globals.gml</script>
     <script>scripts\scr_back_to_game_select.gml</script>
+    <script>scripts\is_out_of_time.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shader0.shader</shader>
@@ -135,17 +136,17 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\init</room>
-    <room>rooms\roo_victory</room>
+    <room>rooms\roo_aptitude</room>
     <room>rooms\roo_player_select</room>
     <room>rooms\roo_player_up</room>
     <room>rooms\roo_game_select</room>
     <rooms name="games">
       <room>rooms\roo_fingerfood</room>
-      <room>rooms\roo_aptitude</room>
-      <room>rooms\roo_gratitude</room>
       <room>rooms\roo_altitude</room>
+      <room>rooms\roo_gratitude</room>
     </rooms>
     <room>rooms\roo_util_back_to_game_select</room>
+    <room>rooms\roo_victory</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
