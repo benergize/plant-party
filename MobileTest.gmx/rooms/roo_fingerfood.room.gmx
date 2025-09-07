@@ -6,7 +6,7 @@
   <vsnap>32</vsnap>
   <hsnap>32</hsnap>
   <isometric>0</isometric>
-  <speed>50</speed>
+  <speed>60</speed>
   <persistent>0</persistent>
   <colour>4227072</colour>
   <showcolour>-1</showcolour>
@@ -62,7 +62,7 @@
     <instance objName="obj_falling_tomato" x="416" y="320" name="inst_243AF2FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_falling_tomato" x="288" y="128" name="inst_E6CC9B18" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_falling_tomato" x="288" y="128" name="inst_7008951C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_racoon" x="416" y="128" name="inst_F7B2FFD0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_racoon" x="416" y="128" name="inst_F7B2FFD0" locked="0" code="" scaleX="0.748031497001648" scaleY="0.75" colour="4294967295" rotation="0"/>
     <instance objName="obj_countdown" x="96" y="32" name="inst_8C535FE3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fadein" x="128" y="288" name="inst_E75A555E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>

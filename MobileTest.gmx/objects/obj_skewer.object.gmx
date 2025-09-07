@@ -49,10 +49,28 @@ image_speed = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>direction = point_direction(x,y,mouse_x,mouse_y);
+            <string>if(image_index &lt; 4) {
 
-if(distance_to_point(mouse_x,mouse_y) &gt; 8) {
-    image_angle = direction - 90
+    direction = point_direction(x,y,mouse_x,mouse_y);
+    
+    if(distance_to_point(mouse_x,mouse_y) &gt; 8) {
+        speed = 4;
+        image_angle = direction - 90
+    }
+    else { speed = 0; }
+}
+else {
+    //if(direction &lt; 180) { 
+    direction+=5; 
+    //}
+    //else if(direction &gt; 180) { direction -= 5; }
+    
+    /*if(abs(direction - 180) &lt; 10) { 
+        direction = 180; 
+        image_xscale += .025;
+        image_yscale += .025;
+    }*/
+        image_angle = direction 
 }
 </string>
           </argument>

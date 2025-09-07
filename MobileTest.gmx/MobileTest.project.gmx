@@ -17,6 +17,10 @@
     <sound>sound\bgm_failure</sound>
     <sound>sound\bgm_test</sound>
     <sound>sound\sou_scribble</sound>
+    <sound>sound\bgm_racoon</sound>
+    <sound>sound\sou_munch</sound>
+    <sound>sound\sou_yourewelcome</sound>
+    <sound>sound\sou_thanks</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_how_many_players</sprite>
@@ -67,6 +71,7 @@
       <sprite>sprites\spr_8</sprite>
       <sprite>sprites\spr_9</sprite>
     </sprites>
+    <sprite>sprites\spr_winner</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bac_ocean</background>
@@ -130,15 +135,17 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\init</room>
+    <room>rooms\roo_victory</room>
     <room>rooms\roo_player_select</room>
     <room>rooms\roo_player_up</room>
     <room>rooms\roo_game_select</room>
-    <room>rooms\roo_gratitude</room>
-    <room>rooms\roo_aptitude</room>
-    <room>rooms\roo_altitude</room>
-    <room>rooms\roo_fingerfood</room>
+    <rooms name="games">
+      <room>rooms\roo_fingerfood</room>
+      <room>rooms\roo_aptitude</room>
+      <room>rooms\roo_gratitude</room>
+      <room>rooms\roo_altitude</room>
+    </rooms>
     <room>rooms\roo_util_back_to_game_select</room>
-    <room>rooms\roo_victory</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
