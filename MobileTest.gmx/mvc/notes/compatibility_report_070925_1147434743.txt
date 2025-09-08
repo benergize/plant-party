@@ -1,0 +1,36 @@
+GameMaker Studio 1 font texture has been backed up at C:\Users\Ben Ehrlich\Repositories\plants-with-attitude\MobileTest.gmx\mvc\fonts\font0\font0.gms1.png
+GameMaker Studio 1 font texture has been backed up at C:\Users\Ben Ehrlich\Repositories\plants-with-attitude\MobileTest.gmx\mvc\fonts\font1\font1.gms1.png
+GameMaker Studio 1 font texture has been backed up at C:\Users\Ben Ehrlich\Repositories\plants-with-attitude\MobileTest.gmx\mvc\fonts\font2\font2.gms1.png
+GameMaker Studio 1 font texture has been backed up at C:\Users\Ben Ehrlich\Repositories\plants-with-attitude\MobileTest.gmx\mvc\fonts\font3\font3.gms1.png
+Converting GML script: C:\Users\Ben Ehrlich\Repositories\plants-with-attitude\MobileTest.gmx\mvc\objects\obj_sky_controller\Alarm_0.gml
+Converted description /// @description Clouds
+
+Converting GML script: C:\Users\Ben Ehrlich\Repositories\plants-with-attitude\MobileTest.gmx\mvc\objects\obj_countdown\Alarm_1.gml
+Converted description /// @description Spawn fadeout
+
+Converting GML script: C:\Users\Ben Ehrlich\Repositories\plants-with-attitude\MobileTest.gmx\mvc\objects\obj_countdown\Alarm_0.gml
+Converted description /// @description Countdown tick
+
+Missing audiogroup for sound: 'bgm_result' - setting to default audio group
+Missing audiogroup for sound: 'bgm_menu' - setting to default audio group
+Missing audiogroup for sound: 'bgm_transition' - setting to default audio group
+Missing audiogroup for sound: 'bgm_sakura' - setting to default audio group
+Missing audiogroup for sound: 'bgm_kiss' - setting to default audio group
+Missing audiogroup for sound: 'bgm_1942' - setting to default audio group
+Missing audiogroup for sound: 'sou_gunshot' - setting to default audio group
+Missing audiogroup for sound: 'sou_explosion' - setting to default audio group
+Missing audiogroup for sound: 'bgm_level_win' - setting to default audio group
+Missing audiogroup for sound: 'bgm_failure' - setting to default audio group
+Missing audiogroup for sound: 'bgm_test' - setting to default audio group
+Missing audiogroup for sound: 'sou_scribble' - setting to default audio group
+Missing audiogroup for sound: 'bgm_racoon' - setting to default audio group
+Missing audiogroup for sound: 'sou_munch' - setting to default audio group
+Missing audiogroup for sound: 'sou_yourewelcome' - setting to default audio group
+Missing audiogroup for sound: 'sou_thanks' - setting to default audio group
+Game speed set to 60
+Added compatibility script 'action\action_wrap.gml'
+Added compatibility script 'instance\instance_create.gml'
+Added compatibility script 'object\object_get_depth.gml'
+Added compatibility script 'action\__init_action.gml'
+Added compatibility script '__init_global.gml'
+Added compatibility script '__global_object_depths.gml'

@@ -44,6 +44,27 @@ for(var v = 0; v &lt; array_length_1d(global.wins); v++) {
     }
 }
 
+sortedScores = ds_list_create();
+
+for(var v = 0; v &lt; array_length_1d(global.wins); v++) {
+    ds_list_add(sortedScores,global.wins[v]);
+}
+
+ds_list_sort(sortedScores,false);
+
+
+
+for(var vv = 0; vv &lt; ds_list_size(sortedScores); vv++) {
+    for(var v = 0; v &lt; array_length_1d(global.wins); v++) {
+        
+        if(sortedScores[| vv] == global.wins[v]) {
+            show_debug_message(string(vv) + ". Player " + string(v) + " - " + string(global.wins[v]) + " wins");
+        }
+    }
+}
+
+
+
 image_speed = .2;
 </string>
           </argument>

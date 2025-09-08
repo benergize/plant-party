@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>//alarm[0] = 30;
 audio_play_sound(bgm_sakura,1,0);
+
+started_sound=false;
 </string>
           </argument>
         </arguments>
@@ -52,8 +54,15 @@ audio_play_sound(bgm_sakura,1,0);
             <string>audio_stop_sound(bgm_sakura);
 
 if(!audio_is_playing(bgm_kiss)) {
-    audio_play_sound(sou_yourewelcome,1,0);
-    audio_play_sound(bgm_kiss,1,0);
+
+    if(!started_sound) {
+        started_sound = true;
+        audio_play_sound(sou_yourewelcome,1,0);
+        audio_play_sound(bgm_kiss,1,0);
+    }
+    else {
+        instance_create(0,0,obj_heart_dissolve);
+    }
 }
 
 instance_create((x) + random(sprite_width), y+sprite_height/4, obj_heart);
