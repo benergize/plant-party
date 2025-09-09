@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>image_alpha = 0;
+image_speed=.7
 </string>
           </argument>
         </arguments>
@@ -227,7 +228,7 @@ move_outside_all(90,-1);
           <argument>
             <kind>1</kind>
             <string>draw_self();
-draw_set_alpha(image_alpha/2);
+draw_set_alpha(image_alpha/3);
 draw_set_color(c_white);
 draw_circle(x-sprite_width/8,y-sprite_width/6,sprite_width/12,0);
 draw_set_alpha(1);
