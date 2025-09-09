@@ -53,9 +53,11 @@ if(image_alpha &lt; 1) { image_alpha += (1/room_speed)/1; if(image_alpha &gt;= 1
 
 image_angle -= hspeed;
 
-if(y &gt; room_height &amp;&amp; obj_countdown.counting_down_to != "failure") {
-    obj_countdown.counting_down_to = "failure";
-    obj_countdown.countdown_time = 1;
+if(!is_out_of_time()) {
+    if(y &gt; room_height &amp;&amp; obj_countdown.counting_down_to != "failure") {
+        obj_countdown.counting_down_to = "failure";
+        obj_countdown.countdown_time = 1;
+    }
 }
 </string>
           </argument>

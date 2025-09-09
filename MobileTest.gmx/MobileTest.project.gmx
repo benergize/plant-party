@@ -10,9 +10,8 @@
     <sound>sound\bgm_transition</sound>
     <sound>sound\bgm_sakura</sound>
     <sound>sound\bgm_kiss</sound>
+    <sound>sound\bgm_balls</sound>
     <sound>sound\bgm_1942</sound>
-    <sound>sound\sou_gunshot</sound>
-    <sound>sound\sou_explosion</sound>
     <sound>sound\bgm_level_win</sound>
     <sound>sound\bgm_failure</sound>
     <sound>sound\bgm_test</sound>
@@ -20,10 +19,11 @@
     <sound>sound\bgm_racoon</sound>
     <sound>sound\sou_munch</sound>
     <sound>sound\sou_yourewelcome</sound>
+    <sound>sound\sou_gunshot</sound>
+    <sound>sound\sou_explosion</sound>
     <sound>sound\sou_thanks</sound>
     <sound>sound\sou_ball_toc</sound>
     <sound>sound\sou_ball_fade_in</sound>
-    <sound>sound\bgm_balls</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_how_many_players</sprite>
@@ -31,6 +31,8 @@
     <sprite>sprites\spr_get_ready</sprite>
     <sprite>sprites\spr_press_start</sprite>
     <sprite>sprites\spr_press_start_outline</sprite>
+    <sprite>sprites\spr_main_menu</sprite>
+    <sprite>sprites\spr_main_menu_hover</sprite>
     <sprite>sprites\spr_press_start_outline_hover</sprite>
     <sprites name="game_select">
       <sprite>sprites\spr_plants_with</sprite>
@@ -116,6 +118,7 @@
   <objects name="objects">
     <objects name="ui">
       <object>objects\obj_press_start</object>
+      <object>objects\obj_back_to_menu</object>
       <object>objects\obj_player_select</object>
       <object>objects\obj_title_screen</object>
       <object>objects\obj_game_select_title</object>
@@ -171,6 +174,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\init</room>
+    <room>rooms\roo_gravityude</room>
     <room>rooms\roo_player_select</room>
     <room>rooms\roo_player_up</room>
     <room>rooms\roo_game_select</room>
@@ -179,11 +183,12 @@
       <room>rooms\roo_gratitude</room>
       <room>rooms\roo_altitude</room>
       <room>rooms\roo_aptitude</room>
-      <room>rooms\roo_gravityude</room>
     </rooms>
     <room>rooms\roo_util_back_to_game_select</room>
     <room>rooms\roo_victory</room>
-    <room>rooms\roo_gratitude_old</room>
+    <rooms name="old">
+      <room>rooms\roo_gratitude_old</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
