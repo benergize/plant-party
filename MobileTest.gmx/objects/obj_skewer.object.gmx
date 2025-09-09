@@ -61,6 +61,8 @@ image_speed = 0;
 }
 else {
     //if(direction &lt; 180) { 
+    x = mouse_x;
+    y = mouse_y;
     direction+=5; 
     //}
     //else if(direction &gt; 180) { direction -= 5; }

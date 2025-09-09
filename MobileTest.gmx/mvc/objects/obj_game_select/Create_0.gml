@@ -6,7 +6,7 @@ games = array_create(40);
 games[0,0] = "Gratitude";
 games[0,1] = spr_gratitude;
 games[0,2] = roo_gratitude;
-games[0,3] = "MAKE HIM BOW!";
+games[0,3] = "FILL IN THE LETTERS!";
 
 games[1,0] = "Altitude";
 games[1,1] = spr_altitude;
@@ -22,6 +22,11 @@ games[3,0] = "Finger Food";
 games[3,1] = spr_finger_food;
 games[3,2] = roo_fingerfood;
 games[3,3] = "SKEWER THE TOMATOES!";
+
+games[4,0] = "Gravityude";
+games[4,1] = spr_gravityude;
+games[4,2] = roo_gravityude;
+games[4,3] = "DON'T LET THEM FALL!";
 
 
 var alreadyPlayed = true;

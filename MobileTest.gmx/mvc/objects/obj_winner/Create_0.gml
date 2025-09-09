@@ -17,5 +17,20 @@ for(var v = 0; v < array_length_1d(global.wins); v++) {
     }
 }
 
+sortedScores = ds_grid_create(2, global.number_of_players);
+
+for(var v = 0; v < global.number_of_players; v++) {
+
+    ds_grid_set(sortedScores, 0, v, v);
+    ds_grid_set(sortedScores, 1, v, global.wins[v]);
+}
+
+ds_grid_sort(sortedScores, 1, 0);
+
+
+
+
+
+
 image_speed = .2;
 

@@ -30,7 +30,10 @@
     <sprite>sprites\spr_title</sprite>
     <sprite>sprites\spr_get_ready</sprite>
     <sprite>sprites\spr_press_start</sprite>
+    <sprite>sprites\spr_success</sprite>
     <sprite>sprites\spr_press_start_outline</sprite>
+    <sprite>sprites\spr_winner</sprite>
+    <sprite>sprites\spr_failure</sprite>
     <sprite>sprites\spr_main_menu</sprite>
     <sprite>sprites\spr_main_menu_hover</sprite>
     <sprite>sprites\spr_press_start_outline_hover</sprite>
@@ -60,14 +63,12 @@
     <sprite>sprites\spr_bullet</sprite>
     <sprite>sprites\spr_explosion</sprite>
     <sprite>sprites\spr_potted_plant</sprite>
-    <sprite>sprites\spr_failure</sprite>
-    <sprite>sprites\spr_success</sprite>
-    <sprite>sprites\spr_test</sprite>
-    <sprite>sprites\spr_tomato</sprite>
-    <sprite>sprites\spr_tomato_explode</sprite>
-    <sprite>sprites\spr_radio_button</sprite>
-    <sprite>sprites\spr_skewer</sprite>
-    <sprite>sprites\spr_racoon</sprite>
+    <sprites name="fingerfood">
+      <sprite>sprites\spr_skewer</sprite>
+      <sprite>sprites\spr_tomato_explode</sprite>
+      <sprite>sprites\spr_tomato</sprite>
+      <sprite>sprites\spr_racoon</sprite>
+    </sprites>
     <sprites name="numbers">
       <sprite>sprites\spr_1</sprite>
       <sprite>sprites\spr_2</sprite>
@@ -79,7 +80,6 @@
       <sprite>sprites\spr_8</sprite>
       <sprite>sprites\spr_9</sprite>
     </sprites>
-    <sprite>sprites\spr_winner</sprite>
     <sprite>sprites\spr_cursor</sprite>
     <sprite>sprites\spr_pointer</sprite>
     <sprites name="gravityude">
@@ -89,16 +89,27 @@
       <sprite>sprites\sprite46</sprite>
       <sprite>sprites\spr_ball</sprite>
     </sprites>
-    <sprite>sprites\spr_rain</sprite>
+    <sprites name="aptitude">
+      <sprite>sprites\spr_radio_button</sprite>
+      <sprite>sprites\spr_test</sprite>
+    </sprites>
     <sprite>sprites\spr_ui_arrow</sprite>
+    <sprite>sprites\spr_rain</sprite>
     <sprite>sprites\spr_ui_arrow_filled</sprite>
     <sprite>sprites\spr_quit</sprite>
     <sprite>sprites\spr_domo</sprite>
     <sprite>sprites\spr_black</sprite>
+    <sprite>sprites\spr_jami_cool</sprite>
+    <sprite>sprites\spr_player</sprite>
+    <sprite>sprites\spr_baseball</sprite>
+    <sprite>sprites\spr_player_pixel</sprite>
+    <sprite>sprites\spr_tree_batter</sprite>
+    <sprite>sprites\sprite65</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bac_ocean</background>
     <background>background\background1</background>
+    <background>background\bac_batitude</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -168,21 +179,27 @@
         <object>objects\obj_rain</object>
         <object>objects\obj_rain_controller</object>
       </objects>
+      <objects name="batitude">
+        <object>objects\obj_pitcher</object>
+        <object>objects\obj_baseball</object>
+        <object>objects\obj_batter</object>
+      </objects>
     </objects>
     <object>objects\obj_fadeout</object>
     <object>objects\obj_fadein</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\init</room>
+    <room>rooms\room12</room>
     <room>rooms\roo_player_select</room>
     <room>rooms\roo_player_up</room>
     <room>rooms\roo_game_select</room>
     <rooms name="games">
-      <room>rooms\roo_fingerfood</room>
       <room>rooms\roo_gratitude</room>
       <room>rooms\roo_altitude</room>
       <room>rooms\roo_aptitude</room>
       <room>rooms\roo_gravityude</room>
+      <room>rooms\roo_fingerfood</room>
     </rooms>
     <room>rooms\roo_util_back_to_game_select</room>
     <room>rooms\roo_victory</room>
