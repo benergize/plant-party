@@ -89,7 +89,11 @@ depth = -y;
 
 
 if(y &gt; room_height + 90) { defeat(); instance_destroy(); }
-if(y &lt; -290) { victory(); instance_destroy(); }
+if(y &lt; -290) { 
+    if(obj_countdown.countdown_time &gt; 0) {
+        victory(); 
+    }
+/*instance_destroy();*/ }
 
 image_angle = direction;
 </string>
@@ -116,7 +120,7 @@ image_angle = direction;
             <kind>1</kind>
             <string>var rel = room_height / (room_height - y);
 
-show_debug_message(string(rel));
+
 draw_sprite_ext( sprite_index,image_index,x, y + (room_height - y)/2, 
 image_xscale+d, 
 (image_yscale+d )* .5,

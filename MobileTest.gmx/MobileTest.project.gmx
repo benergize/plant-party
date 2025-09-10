@@ -84,8 +84,15 @@
       <sprite>sprites\spr_8</sprite>
       <sprite>sprites\spr_9</sprite>
     </sprites>
-    <sprite>sprites\spr_cursor</sprite>
-    <sprite>sprites\spr_pointer</sprite>
+    <sprites name="baseball">
+      <sprite>sprites\spr_baseball</sprite>
+      <sprite>sprites\spr_player_throw</sprite>
+      <sprite>sprites\spr_player_idle</sprite>
+      <sprite>sprites\spr_player_sight</sprite>
+      <sprite>sprites\spr_player</sprite>
+      <sprite>sprites\spr_tree_batter</sprite>
+      <sprite>sprites\spr_player_pixel</sprite>
+    </sprites>
     <sprites name="gravityude">
       <sprite>sprites\spr_rain</sprite>
       <sprite>sprites\spr_brick_wall</sprite>
@@ -100,18 +107,12 @@
     </sprites>
     <sprite>sprites\spr_ui_arrow</sprite>
     <sprite>sprites\spr_ui_arrow_filled</sprite>
+    <sprite>sprites\spr_cursor</sprite>
     <sprite>sprites\spr_quit</sprite>
+    <sprite>sprites\spr_pointer</sprite>
     <sprite>sprites\spr_domo</sprite>
     <sprite>sprites\spr_black</sprite>
     <sprite>sprites\spr_jami_cool</sprite>
-    <sprites name="baseball">
-      <sprite>sprites\spr_baseball</sprite>
-      <sprite>sprites\spr_player_throw</sprite>
-      <sprite>sprites\spr_player_idle</sprite>
-      <sprite>sprites\spr_player</sprite>
-      <sprite>sprites\spr_tree_batter</sprite>
-      <sprite>sprites\spr_player_pixel</sprite>
-    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bac_ocean</background>
@@ -203,10 +204,10 @@
     <room>rooms\roo_player_up</room>
     <room>rooms\roo_game_select</room>
     <rooms name="games">
-      <room>rooms\roo_gratitude</room>
       <room>rooms\roo_altitude</room>
       <room>rooms\roo_aptitude</room>
       <room>rooms\roo_batitude</room>
+      <room>rooms\roo_gratitude</room>
       <room>rooms\roo_gravityude</room>
       <room>rooms\roo_fingerfood</room>
     </rooms>

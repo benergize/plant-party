@@ -63,6 +63,10 @@ if(image_speed &gt; 0) {
             
             var h = (270 - x);
             obj_baseball.hspeed = h;
+            
+            obj_pitcher.sprite_index = spr_player_sight;
+            obj_pitcher.image_index = 0;
+            obj_pitcher.image_speed = .5;
         }
     }
 }

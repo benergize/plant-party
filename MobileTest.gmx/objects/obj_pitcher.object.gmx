@@ -77,6 +77,11 @@ image_speed = .25;
             <kind>1</kind>
             <string>if(sprite_index == spr_player_throw &amp;&amp; round(image_index)==13) { if(!instance_exists(obj_baseball)) { instance_create(x,y,obj_baseball); } }
 //if(image_speed == 0 &amp;&amp; !instance_exists(obj_baseball)) { image_index = 0; image_speed = 1; }
+
+if(sprite_index == spr_player_sight) {
+    if(obj_baseball.x &lt; x) { image_xscale = abs(image_xscale)*-1; }
+    else { image_xscale = abs(image_xscale); }
+}
 </string>
           </argument>
         </arguments>
@@ -102,6 +107,7 @@ image_speed = .25;
             <string>image_speed = 0;
 
 if(sprite_index == spr_player_idle) { alarm[0]=room_speed; }
+if(sprite_index == spr_player_sight) { image_index = image_number-1;image_speed=0; }
 </string>
           </argument>
         </arguments>
