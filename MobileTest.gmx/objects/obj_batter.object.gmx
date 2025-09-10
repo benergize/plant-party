@@ -54,7 +54,10 @@ y = room_height+55
 
 if(image_speed &gt; 0) {
     if(instance_exists(obj_baseball)) {
-        if(obj_baseball.y &gt; 252 &amp;&amp; obj_baseball.y &lt; 316) {
+        if(obj_baseball.y &gt; 290 &amp;&amp; obj_baseball.y &lt; 340 &amp;&amp; image_index &lt; image_number/2) {
+            
+            audio_play_sound(sou_swing_hit,1,0);
+            
             obj_baseball.vspeed = -abs(obj_baseball.vspeed);
             obj_baseball.image_speed *= -1.5;
             
@@ -69,7 +72,7 @@ depth = -y;
         </arguments>
       </action>
     </event>
-    <event eventtype="6" enumb="4">
+    <event eventtype="6" enumb="53">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -86,7 +89,7 @@ depth = -y;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(image_index == 0) { image_speed = .5; }
+            <string>if(image_index == 0) { image_speed = 1; audio_play_sound(sou_swing,1,0);}
 </string>
           </argument>
         </arguments>

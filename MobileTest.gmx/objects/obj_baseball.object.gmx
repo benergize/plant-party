@@ -29,7 +29,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>6</string>
+            <string>8</string>
           </argument>
         </arguments>
       </action>
@@ -72,7 +72,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var modi = abs(vspeed) / vspeed;
+            <string>
+
+var modi = abs(vspeed) / vspeed;
 image_xscale += .05 * modi;
 image_yscale += .05 * modi;
 
@@ -80,13 +82,16 @@ if(vspeed &lt; 0) {
     image_xscale += .034; 
     image_yscale += .034; 
     y -= 1;
-    d+=.05;
+    d += .05;
 }
+
 depth = -y;
 
 
-if(y &gt; room_height + 10) {instance_destroy();}
-if(y &lt; -200) { instance_destroy(); }
+if(y &gt; room_height + 90) { defeat(); instance_destroy(); }
+if(y &lt; -290) { victory(); instance_destroy(); }
+
+image_angle = direction;
 </string>
           </argument>
         </arguments>

@@ -53,6 +53,7 @@
   <instances>
     <instance objName="obj_pitcher" x="320" y="62" name="inst_B4A2115F" locked="0" code="" scaleX="0.75" scaleY="0.75" colour="4294967295" rotation="0"/>
     <instance objName="obj_batter" x="256" y="384" name="inst_0A084672" locked="0" code="" scaleX="4" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="obj_countdown" x="64" y="26" name="inst_85728CD3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
