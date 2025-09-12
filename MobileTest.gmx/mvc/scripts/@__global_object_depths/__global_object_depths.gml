@@ -23,7 +23,7 @@ global.__objectDepths[15] = -5; // obj_slider
 global.__objectDepths[16] = 0; // obj_heart
 global.__objectDepths[17] = -999999; // obj_heart_dissolve
 global.__objectDepths[18] = -1; // obj_domo
-global.__objectDepths[19] = -2; // obj_erasable
+global.__objectDepths[19] = -3; // obj_erasable
 global.__objectDepths[20] = -1; // obj_cascade
 global.__objectDepths[21] = 0; // obj_altitude_player
 global.__objectDepths[22] = 0; // obj_sky_controller
@@ -43,8 +43,11 @@ global.__objectDepths[35] = 0; // obj_umbrella
 global.__objectDepths[36] = 0; // obj_wall
 global.__objectDepths[37] = 0; // obj_rain
 global.__objectDepths[38] = 0; // obj_rain_controller
-global.__objectDepths[39] = -999; // obj_fadeout
-global.__objectDepths[40] = -999; // obj_fadein
+global.__objectDepths[39] = 0; // obj_pitcher
+global.__objectDepths[40] = -5; // obj_baseball
+global.__objectDepths[41] = 0; // obj_batter
+global.__objectDepths[42] = -999; // obj_fadeout
+global.__objectDepths[43] = -999; // obj_fadein
 
 
 global.__objectNames[0] = "obj_press_start";
@@ -86,8 +89,11 @@ global.__objectNames[35] = "obj_umbrella";
 global.__objectNames[36] = "obj_wall";
 global.__objectNames[37] = "obj_rain";
 global.__objectNames[38] = "obj_rain_controller";
-global.__objectNames[39] = "obj_fadeout";
-global.__objectNames[40] = "obj_fadein";
+global.__objectNames[39] = "obj_pitcher";
+global.__objectNames[40] = "obj_baseball";
+global.__objectNames[41] = "obj_batter";
+global.__objectNames[42] = "obj_fadeout";
+global.__objectNames[43] = "obj_fadein";
 
 
 // create another array that has the correct entries

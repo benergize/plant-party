@@ -1,0 +1,25 @@
+{
+  "$GMSound": "",
+  "%Name": "bgm_balls",
+  "audioGroupId": {
+    "name": "audiogroup_default",
+    "path": "audiogroups/audiogroup_default",
+  },
+  "bitDepth": 1,
+  "bitRate": 192,
+  "compression": 3,
+  "conversionMode": 0,
+  "duration": 0.0,
+  "name": "bgm_balls",
+  "parent": {
+    "name": "Sounds",
+    "path": "folders/Sounds.yy",
+  },
+  "preload": true,
+  "resourceType": "GMSound",
+  "resourceVersion": "2.0",
+  "sampleRate": 44100,
+  "soundFile": "bgm_balls",
+  "type": 1,
+  "volume": 1.0,
+}

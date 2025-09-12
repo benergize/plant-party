@@ -28,6 +28,11 @@ games[4,1] = spr_gravityude;
 games[4,2] = roo_gravityude;
 games[4,3] = "DON'T LET THEM FALL!";
 
+games[5,0] = "Batitude";
+games[5,1] = spr_batitude;
+games[5,2] = roo_batitude;
+games[5,3] = "HIT IT OUT THE PARK!";
+
 
 var alreadyPlayed = true;
 var panic = 0;

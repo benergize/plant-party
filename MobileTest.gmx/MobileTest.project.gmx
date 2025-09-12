@@ -27,36 +27,18 @@
     <sound>sound\bgm_baseball</sound>
     <sound>sound\sou_swing</sound>
     <sound>sound\sou_swing_hit</sound>
+    <sound>sound\sou_boxing</sound>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\spr_how_many_players</sprite>
-    <sprite>sprites\spr_title</sprite>
-    <sprite>sprites\spr_get_ready</sprite>
-    <sprite>sprites\spr_press_start</sprite>
-    <sprite>sprites\spr_success</sprite>
-    <sprite>sprites\spr_press_start_outline</sprite>
-    <sprite>sprites\spr_winner</sprite>
-    <sprite>sprites\spr_failure</sprite>
-    <sprite>sprites\spr_main_menu</sprite>
-    <sprite>sprites\spr_main_menu_hover</sprite>
-    <sprite>sprites\spr_press_start_outline_hover</sprite>
-    <sprites name="game_select">
-      <sprite>sprites\spr_plants_with</sprite>
-      <sprite>sprites\spr_gratitude</sprite>
-      <sprite>sprites\spr_batitude</sprite>
-      <sprite>sprites\spr_altitude</sprite>
-      <sprite>sprites\spr_gravityude</sprite>
-      <sprite>sprites\spr_finger_food</sprite>
-      <sprite>sprites\spr_aptitude</sprite>
-      <sprite>sprites\spr_game_select</sprite>
-    </sprites>
     <sprites name="gratitude">
       <sprite>sprites\spr_plant_girlfirned</sprite>
       <sprite>sprites\spr_heart</sprite>
       <sprite>sprites\spr_slider</sprite>
       <sprite>sprites\spr_heart_dissolve</sprite>
+      <sprite>sprites\spr_black</sprite>
       <sprite>sprites\spr_gift</sprite>
       <sprite>sprites\spr_bowing</sprite>
+      <sprite>sprites\spr_domo</sprite>
     </sprites>
     <sprites name="altitude">
       <sprite>sprites\spr_bullet</sprite>
@@ -66,23 +48,11 @@
       <sprite>sprites\spr_plane_bank</sprite>
       <sprite>sprites\spr_plant_flying</sprite>
     </sprites>
-    <sprite>sprites\spr_potted_plant</sprite>
     <sprites name="fingerfood">
       <sprite>sprites\spr_skewer</sprite>
       <sprite>sprites\spr_tomato_explode</sprite>
       <sprite>sprites\spr_tomato</sprite>
       <sprite>sprites\spr_racoon</sprite>
-    </sprites>
-    <sprites name="numbers">
-      <sprite>sprites\spr_1</sprite>
-      <sprite>sprites\spr_2</sprite>
-      <sprite>sprites\spr_3</sprite>
-      <sprite>sprites\spr_4</sprite>
-      <sprite>sprites\spr_5</sprite>
-      <sprite>sprites\spr_6</sprite>
-      <sprite>sprites\spr_7</sprite>
-      <sprite>sprites\spr_8</sprite>
-      <sprite>sprites\spr_9</sprite>
     </sprites>
     <sprites name="baseball">
       <sprite>sprites\spr_baseball</sprite>
@@ -105,19 +75,61 @@
       <sprite>sprites\spr_radio_button</sprite>
       <sprite>sprites\spr_test</sprite>
     </sprites>
-    <sprite>sprites\spr_ui_arrow</sprite>
-    <sprite>sprites\spr_ui_arrow_filled</sprite>
-    <sprite>sprites\spr_cursor</sprite>
-    <sprite>sprites\spr_quit</sprite>
-    <sprite>sprites\spr_pointer</sprite>
-    <sprite>sprites\spr_domo</sprite>
-    <sprite>sprites\spr_black</sprite>
-    <sprite>sprites\spr_jami_cool</sprite>
+    <sprite>sprites\spr_potted_plant</sprite>
+    <sprites name="fortitude">
+      <sprite>sprites\spr_fighter</sprite>
+      <sprite>sprites\spr_boxer_walk</sprite>
+      <sprite>sprites\spr_kick</sprite>
+      <sprite>sprites\spr_left_hook</sprite>
+      <sprite>sprites\spr_right_hook</sprite>
+    </sprites>
+    <sprites name="ui">
+      <sprite>sprites\spr_jami_cool</sprite>
+      <sprite>sprites\spr_how_many_players</sprite>
+      <sprite>sprites\spr_failure</sprite>
+      <sprite>sprites\spr_title</sprite>
+      <sprite>sprites\spr_ui_arrow</sprite>
+      <sprite>sprites\spr_press_start</sprite>
+      <sprite>sprites\spr_get_ready</sprite>
+      <sprite>sprites\spr_success</sprite>
+      <sprite>sprites\spr_press_start_outline</sprite>
+      <sprite>sprites\spr_winner</sprite>
+      <sprite>sprites\spr_press_start_outline_hover</sprite>
+      <sprite>sprites\spr_main_menu</sprite>
+      <sprite>sprites\spr_main_menu_hover</sprite>
+      <sprite>sprites\spr_quit</sprite>
+      <sprite>sprites\spr_ui_arrow_filled</sprite>
+      <sprite>sprites\spr_cursor</sprite>
+      <sprite>sprites\spr_pointer</sprite>
+      <sprites name="numbers">
+        <sprite>sprites\spr_1</sprite>
+        <sprite>sprites\spr_2</sprite>
+        <sprite>sprites\spr_3</sprite>
+        <sprite>sprites\spr_4</sprite>
+        <sprite>sprites\spr_5</sprite>
+        <sprite>sprites\spr_6</sprite>
+        <sprite>sprites\spr_7</sprite>
+        <sprite>sprites\spr_8</sprite>
+        <sprite>sprites\spr_9</sprite>
+      </sprites>
+      <sprites name="game_select">
+        <sprite>sprites\spr_plants_with</sprite>
+        <sprite>sprites\spr_gratitude</sprite>
+        <sprite>sprites\spr_batitude</sprite>
+        <sprite>sprites\spr_altitude</sprite>
+        <sprite>sprites\spr_gravityude</sprite>
+        <sprite>sprites\spr_finger_food</sprite>
+        <sprite>sprites\spr_aptitude</sprite>
+        <sprite>sprites\spr_game_select</sprite>
+      </sprites>
+    </sprites>
+    <sprite>sprites\spr_misc_wall</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bac_ocean</background>
     <background>background\background1</background>
     <background>background\bac_batitude</background>
+    <background>background\background3</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -194,12 +206,17 @@
         <object>objects\obj_baseball</object>
         <object>objects\obj_batter</object>
       </objects>
+      <objects name="fortitude">
+        <object>objects\obj_boxer</object>
+        <object>objects\obj_boxing_wall</object>
+      </objects>
     </objects>
     <object>objects\obj_fadeout</object>
     <object>objects\obj_fadein</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\init</room>
+    <room>rooms\room13</room>
     <room>rooms\roo_player_select</room>
     <room>rooms\roo_player_up</room>
     <room>rooms\roo_game_select</room>
