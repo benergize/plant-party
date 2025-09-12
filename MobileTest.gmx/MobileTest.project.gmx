@@ -119,6 +119,7 @@
         <sprite>sprites\spr_gratitude</sprite>
         <sprite>sprites\spr_batitude</sprite>
         <sprite>sprites\spr_altitude</sprite>
+        <sprite>sprites\spr_fortitude</sprite>
         <sprite>sprites\spr_gravityude</sprite>
         <sprite>sprites\spr_finger_food</sprite>
         <sprite>sprites\spr_aptitude</sprite>
@@ -141,9 +142,6 @@
     <script>scripts\victory.gml</script>
     <script>scripts\defeat.gml</script>
   </scripts>
-  <shaders name="shaders">
-    <shader type="GLSLES">shaders\shader0.shader</shader>
-  </shaders>
   <fonts name="fonts">
     <font>fonts\font0</font>
     <font>fonts\font1</font>
@@ -195,7 +193,6 @@
         <object>objects\obj_falling_tomato</object>
         <object>objects\obj_racoon</object>
       </objects>
-      <object>objects\obj_countdown</object>
       <objects name="gravityude">
         <object>objects\obj_ball</object>
         <object>objects\obj_umbrella</object>
@@ -213,19 +210,20 @@
         <object>objects\obj_boxing_wall</object>
         <object>objects\obj_punched</object>
       </objects>
+      <object>objects\obj_countdown</object>
     </objects>
     <object>objects\obj_fadeout</object>
     <object>objects\obj_fadein</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\init</room>
-    <room>rooms\roo_fortitude</room>
     <room>rooms\roo_player_select</room>
     <room>rooms\roo_player_up</room>
     <room>rooms\roo_game_select</room>
     <rooms name="games">
       <room>rooms\roo_altitude</room>
       <room>rooms\roo_aptitude</room>
+      <room>rooms\roo_fortitude</room>
       <room>rooms\roo_batitude</room>
       <room>rooms\roo_gratitude</room>
       <room>rooms\roo_gravityude</room>

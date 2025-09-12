@@ -60,6 +60,11 @@ games[5,1] = spr_batitude;
 games[5,2] = roo_batitude;
 games[5,3] = "HIT IT OUT THE PARK!";
 
+games[6,0] = "Fortitude";
+games[6,1] = spr_fortitude;
+games[6,2] = roo_fortitude;
+games[6,3] = "BLOCK THE PUNCHES!";
+
 
 var alreadyPlayed = true;
 var panic = 0;
