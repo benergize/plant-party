@@ -5,18 +5,20 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
-    <sound>sound\bgm_result</sound>
-    <sound>sound\bgm_menu</sound>
-    <sound>sound\bgm_transition</sound>
-    <sound>sound\bgm_sakura</sound>
-    <sound>sound\bgm_kiss</sound>
-    <sound>sound\bgm_balls</sound>
     <sound>sound\bgm_1942</sound>
-    <sound>sound\bgm_level_win</sound>
+    <sound>sound\bgm_baseball</sound>
+    <sound>sound\bgm_balls</sound>
+    <sound>sound\sou_boxing</sound>
     <sound>sound\bgm_failure</sound>
-    <sound>sound\bgm_test</sound>
-    <sound>sound\sou_scribble</sound>
+    <sound>sound\bgm_kiss</sound>
+    <sound>sound\bgm_level_win</sound>
+    <sound>sound\bgm_menu</sound>
     <sound>sound\bgm_racoon</sound>
+    <sound>sound\bgm_result</sound>
+    <sound>sound\bgm_sakura</sound>
+    <sound>sound\sou_scribble</sound>
+    <sound>sound\bgm_test</sound>
+    <sound>sound\bgm_transition</sound>
     <sound>sound\sou_munch</sound>
     <sound>sound\sou_yourewelcome</sound>
     <sound>sound\sou_gunshot</sound>
@@ -24,10 +26,10 @@
     <sound>sound\sou_thanks</sound>
     <sound>sound\sou_ball_toc</sound>
     <sound>sound\sou_ball_fade_in</sound>
-    <sound>sound\bgm_baseball</sound>
     <sound>sound\sou_swing</sound>
     <sound>sound\sou_swing_hit</sound>
-    <sound>sound\sou_boxing</sound>
+    <sound>sound\sou_throw_punch</sound>
+    <sound>sound\sou_punched</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="gratitude">
@@ -209,6 +211,7 @@
       <objects name="fortitude">
         <object>objects\obj_boxer</object>
         <object>objects\obj_boxing_wall</object>
+        <object>objects\obj_punched</object>
       </objects>
     </objects>
     <object>objects\obj_fadeout</object>
@@ -216,7 +219,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\init</room>
-    <room>rooms\room13</room>
+    <room>rooms\roo_fortitude</room>
     <room>rooms\roo_player_select</room>
     <room>rooms\roo_player_up</room>
     <room>rooms\roo_game_select</room>

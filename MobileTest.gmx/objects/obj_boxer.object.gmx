@@ -33,6 +33,8 @@ if(direction &gt; 270 || direction &lt; 90) { image_xscale = abs(image_xscale)*-
 alarm[0] = room_speed*2;
 
 audio_play_sound(sou_boxing,1,0);
+
+safe = false;
 </string>
           </argument>
         </arguments>
@@ -55,10 +57,14 @@ audio_play_sound(sou_boxing,1,0);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>speed = 0;
+            <string>if(is_out_of_time() || instance_exists(obj_punched)) { exit; }
+
+speed = 0;
 sprite_index = choose(spr_left_hook,spr_right_hook,spr_kick);
 image_index=0;
 image_speed=.75;
+safe = false;
+audio_play_sound(sou_throw_punch,1,0);
 </string>
           </argument>
         </arguments>
@@ -81,7 +87,14 @@ image_speed=.75;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>depth=-y
+            <string>//depth=-y
+
+if(!instance_exists(obj_punched)) {
+    if(sprite_index != spr_boxer_walk &amp;&amp; image_index &gt; image_number / 2 &amp;&amp; !safe){
+        instance_create(0,0,obj_punched);
+        //defeat();
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -119,6 +132,35 @@ else { image_xscale = abs(image_xscale); }*/
         </arguments>
       </action>
     </event>
+    <event eventtype="6" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>
+if(!instance_exists(obj_punched)) {
+    if(sprite_index != spr_boxer_walk &amp;&amp; !safe) {
+        safe = true;
+        audio_play_sound(sou_swing_hit,1,0);
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="7" enumb="7">
       <action>
         <libid>1</libid>
@@ -144,6 +186,7 @@ if(sprite_index!= spr_boxer_walk) {
     alarm[0] = 2 * room_speed;
     sprite_index = spr_boxer_walk;
     image_speed = .5;
+    
 }
 
 
