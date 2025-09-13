@@ -95,7 +95,7 @@ image_alpha = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(global.number_of_players &lt; 9 ) { global.number_of_players++; }
+            <string>if(global.number_of_players &lt; 99 ) { global.number_of_players++; }
 </string>
           </argument>
         </arguments>

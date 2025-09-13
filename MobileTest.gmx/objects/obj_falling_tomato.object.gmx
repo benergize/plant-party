@@ -51,8 +51,8 @@ image_speed = .5;
           <argument>
             <kind>1</kind>
             <string>if(y &lt; room_height) {
-    if(x &gt; room_width + 10) { x = -10; }
-    if(x &lt; -10) { x = room_width + 10; }
+    if(x &gt; room_width + 10) { x = -10; direction = -45 + random(90); }
+    if(x &lt; -10) { x = room_width + 10; direction = 125 + random(90);}
 }
 else if(y &gt;= room_height) { y = random(room_height-100)+100; x = choose(-10,room_width+10) }
 </string>

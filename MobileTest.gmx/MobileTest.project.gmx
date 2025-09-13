@@ -105,6 +105,7 @@
       <sprite>sprites\spr_pointer</sprite>
       <sprites name="numbers">
         <sprite>sprites\spr_1</sprite>
+        <sprite>sprites\spr_0</sprite>
         <sprite>sprites\spr_2</sprite>
         <sprite>sprites\spr_3</sprite>
         <sprite>sprites\spr_4</sprite>
