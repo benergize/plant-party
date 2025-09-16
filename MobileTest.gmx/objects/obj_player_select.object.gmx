@@ -95,7 +95,7 @@ draw_set_color(c_white);
 draw_set_halign(fa_center);
 //draw_text(room_width/2, y, global.number_of_players);
 if(global.number_of_players &lt;= 9) {
-    draw_sprite(asset_get_index("spr_" + string(global.number_of_players)),image_index,-16+room_width/2, y);
+    draw_sprite(asset_get_index("spr_" + string(global.number_of_players)),image_index,-16+x, y);
 }
 else {
     var nop = string(global.number_of_players);
@@ -105,8 +105,8 @@ else {
     show_debug_message(first + sec)
     show_debug_message(sec);
     
-    draw_sprite(asset_get_index("spr_" + first),image_index,-28+room_width/2, y);
-    draw_sprite(asset_get_index("spr_" + sec),image_index,-4+room_width/2, y);
+    draw_sprite(asset_get_index("spr_" + first),image_index,-28+x, y);
+    draw_sprite(asset_get_index("spr_" + sec),image_index,-4+x, y);
 }
 draw_set_alpha(1);
                                               

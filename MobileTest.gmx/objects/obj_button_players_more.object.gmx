@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>image_speed = .25;
 image_alpha = 0;
+t="players";
 </string>
           </argument>
         </arguments>
@@ -95,7 +96,13 @@ image_alpha = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(global.number_of_players &lt; 99 ) { global.number_of_players++; }
+            <string>if(t == "players") { 
+    if(global.number_of_players &lt; 99 ) { global.number_of_players++; }
+}
+else {
+    
+    if(global.number_of_rounds &lt; 99 ) { global.number_of_rounds++; }
+}
 </string>
           </argument>
         </arguments>
