@@ -143,6 +143,7 @@
     <script>scripts\is_out_of_time.gml</script>
     <script>scripts\victory.gml</script>
     <script>scripts\defeat.gml</script>
+    <script>scripts\GAMES_LIST.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font0</font>
