@@ -166,7 +166,8 @@ places[6] = "7th";
 places[7] = "8th";
 places[8] = "9th";
 
-for(var vv = 0; vv &lt; ds_grid_height(sortedScores); vv++) {
+//Five is max that can actually fit on screen.
+for(var vv = 0; vv &lt; min(global.number_of_players, 5); vv++) {
 
     if(vv &gt; 0) {
         draw_set_color(c_white);

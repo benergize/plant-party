@@ -231,12 +231,12 @@
         <object>objects\obj_boxing_wall</object>
         <object>objects\obj_punched</object>
       </objects>
-      <object>objects\obj_countdown</object>
       <objects name="amplitude">
         <object>objects\obj_music_controller</object>
         <object>objects\obj_ampl_button</object>
         <object>objects\obj_log</object>
       </objects>
+      <object>objects\obj_countdown</object>
     </objects>
     <object>objects\obj_fadeout</object>
     <object>objects\obj_fadein</object>
