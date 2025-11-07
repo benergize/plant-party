@@ -191,9 +191,22 @@ image_speed = .3;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_self();
+            <string>//draw_self();
 
-draw_sprite(games[game,1],image_index,x,y+3);
+
+var full_width = (sprite_get_width(sprite_index) + sprite_get_width(games[game,1]));
+var half_width = full_width / 2;
+
+var room_half = room_width / 2;
+
+var fp = room_half - half_width;
+
+show_debug_message(string(full_width));
+show_debug_message(fp);
+
+draw_sprite(sprite_index, image_index, fp, y);
+draw_sprite(games[game,1],image_index, fp + 193, y + 3);
+
 
 draw_set_color(c_white);
 draw_set_halign(fa_center);
