@@ -101,6 +101,7 @@
       <sprite>sprites\spr_main_menu</sprite>
       <sprite>sprites\spr_main_menu_hover</sprite>
       <sprite>sprites\spr_quit</sprite>
+      <sprite>sprites\spr_music</sprite>
       <sprite>sprites\spr_ui_arrow_filled</sprite>
       <sprite>sprites\spr_cursor</sprite>
       <sprite>sprites\spr_pointer</sprite>
@@ -162,10 +163,10 @@
       <object>objects\obj_game_select</object>
       <object>objects\obj_player_at_bat</object>
       <object>objects\obj_winner</object>
-      <object>objects\object28</object>
       <object>objects\obj_button_players_fewer</object>
       <object>objects\obj_button_players_more</object>
       <object>objects\obj_quit</object>
+      <object>objects\obj_sound_toggle</object>
     </objects>
     <objects name="minigames">
       <objects name="gratitude">
