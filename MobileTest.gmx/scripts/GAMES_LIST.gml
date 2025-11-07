@@ -7,7 +7,7 @@
 //2: The room the minigame runs in
 //3: Short instructions how-to-play.
 
-
+//TODO: Do this with a list and maps without introducing horrific memory leaks.
 var games = array_create(40);
 games[0,0] = "Gratitude";
 games[0,1] = spr_gratitude;
@@ -43,5 +43,10 @@ games[6,0] = "Fortitude";
 games[6,1] = spr_fortitude;
 games[6,2] = roo_fortitude;
 games[6,3] = "BLOCK THE PUNCHES!";
+
+games[7,0] = "Amplitude";
+games[7,1] = spr_amplitude;
+games[7,2] = roo_amplitude;
+games[7,3] = "PLAY THE BADGER SONG!";
 
 return games;

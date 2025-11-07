@@ -30,6 +30,15 @@
     <sound>sound\sou_swing_hit</sound>
     <sound>sound\sou_throw_punch</sound>
     <sound>sound\sou_punched</sound>
+    <sound>sound\bgm_jazz</sound>
+    <sounds name="notes">
+      <sound>sound\sou_f</sound>
+      <sound>sound\sou_c</sound>
+      <sound>sound\sou_g</sound>
+      <sound>sound\sou_ds</sound>
+      <sound>sound\sou_c2</sound>
+      <sound>sound\sou_as</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprites name="gratitude">
@@ -120,6 +129,7 @@
       <sprites name="game_select">
         <sprite>sprites\spr_plants_with</sprite>
         <sprite>sprites\spr_gratitude</sprite>
+        <sprite>sprites\spr_amplitude</sprite>
         <sprite>sprites\spr_batitude</sprite>
         <sprite>sprites\spr_altitude</sprite>
         <sprite>sprites\spr_fortitude</sprite>
@@ -130,6 +140,11 @@
       </sprites>
     </sprites>
     <sprite>sprites\spr_misc_wall</sprite>
+    <sprites name="amplitude">
+      <sprite>sprites\spr_instrument_button</sprite>
+      <sprite>sprites\spr_log</sprite>
+      <sprite>sprites\spr_badger_appear</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bac_ocean</background>
@@ -145,6 +160,7 @@
     <script>scripts\victory.gml</script>
     <script>scripts\defeat.gml</script>
     <script>scripts\GAMES_LIST.gml</script>
+    <script>scripts\get_corresponding_log.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font0</font>
@@ -216,6 +232,11 @@
         <object>objects\obj_punched</object>
       </objects>
       <object>objects\obj_countdown</object>
+      <objects name="amplitude">
+        <object>objects\obj_music_controller</object>
+        <object>objects\obj_ampl_button</object>
+        <object>objects\obj_log</object>
+      </objects>
     </objects>
     <object>objects\obj_fadeout</object>
     <object>objects\obj_fadein</object>
@@ -232,6 +253,7 @@
       <room>rooms\roo_batitude</room>
       <room>rooms\roo_gratitude</room>
       <room>rooms\roo_gravityude</room>
+      <room>rooms\roo_amplitude</room>
       <room>rooms\roo_fingerfood</room>
     </rooms>
     <room>rooms\roo_util_back_to_game_select</room>
